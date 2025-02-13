@@ -25,80 +25,18 @@ The VSDsquadron Mini is a compact RISC-V development board designed for hobbyist
 -------------------------------------------------
 
 <details>
-<summary><b>Task 1:</b> The Objective of Task-1 is to watch lab videos that are based on C and RISCV and then use the gcc and riscv compilers to compile the C code</summary>
+<summary><b>Task 1:</b> The Objective of Task-1 is to watch lab videos that are based on C and RISC-V and then use the gcc and risc-v compilers to compile the C code</summary>
 
 ### C Language based LAB
 We have to follow the given steps to compile any **.c** file in our machine:  
 1. Open the bash terminal and locate to the directory where you want to create your file. Then run the following command:
 
 	```
-	gedit sum.c
+	gedit sum.c or leafpad sum1ton.c
 	```  
-2. This will open the editor and allows you to write into the file that you have created. You have to write the C code of printing the sum of n numbers. Once you are done with your code, press ```Ctrl + S``` to save your file, and then press ```Ctrl + W``` to close the editor.   
-3. To the C code on your terminal, run the following command:
-
-	```
-	gcc sum.c
-	./a.out
-	```
-### C Code compiled on gcc Compiler:
- <p align="center">
-  <img width="800" height="500" src="/Task 1/C Code compiled on gcc Compiler.png">
-</p>
-
-### Compiled C output:
- <p align="center">
-  <img width="800" height="500" src="/Task 1/compiled C output.png">
-</p>
-
-### RISCV based LAB
-We have to do the same compilation of our code but this time using RISCV gcc compiler. Follow the given steps:  
-1. Open the terminal and run the given command:  
-
-	```
-	cat sum.c
-	```
-### Cat Command:
- <p align="center">
-  <img width="800" height="500" src="/Task 1/cat Command.png">
-</p>
-
-2. Using the **cat** command, the entire C code will be displayed on the terminal. Now run the following command to compile the code in riscv64 gcc compiler:  
-
-	```
-	riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
-	```
-3. Open a new terminal and run the given command:    
-
-	```
-	riscv64-unknown-elf-objdump -d sum.o
-	```
-### Objdump using -O1 format:
- <p align="center">
-  <img width="800" height="500" src="/Task 1/Objdump using -O1 format.png">
-</p>
-
-4. Open the previous tab and run the following command to compile the code in riscv64 gcc compiler:  
-
-	```
-	riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
-	```
-
-5. Open a new terminal and run the given command:    
-
-	```
-	riscv64-unknown-elf-objdump -d sum.o
-	```
-### Objdump using -Ofast format:
- <p align="center">
-  <img width="800" height="500" src="/Task 1/Objdump using -Ofast format.png">
-</p>
-
-
-
-Installing Leafpad editor
-
-![1 Installing Leafpad editor](https://github.com/user-attachments/assets/cf0d0b1f-2648-497f-8e25-4988b0ed6498)
+2. This will open the editor and allows you to write into the file that you have created. You have to write the C code of printing the sum of n numbers. Once you are done with your code, save your file, and then close the editor.
+ Installing Leafpad editor
+ ![1 Installing Leafpad editor](https://github.com/user-attachments/assets/cf0d0b1f-2648-497f-8e25-4988b0ed6498)
 
 ![2 ILE 2](https://github.com/user-attachments/assets/c3880c81-035f-4148-8f83-11773a7a1025)
 
@@ -108,6 +46,14 @@ Creating a file named "sum1ton.c"
 
 A C-programme is written to find the sum of numbers from 1 to n, and the programme is executed.
 ![4](https://github.com/user-attachments/assets/2c8e884c-3864-416b-aaab-07542628cb0f)
+
+4. To the C code on your terminal, run the following command:
+
+	```
+	gcc sum.c/gcc sum1ton.c
+	./a.out
+	```
+### C Code compiled on gcc Compiler:
 
  The programme is then compiled using the gcc compiler.
 
@@ -145,7 +91,10 @@ Renaming the written programme from sum1ton.c to lab1sum1ton.c via the terminal.
 
 The clear screen command -clear.
 ![10 Clear sreen](https://github.com/user-attachments/assets/604a9394-ce6c-472b-a74c-36aa88bc9e7b)
+ 
 
+### Compiled C output:
+ 
 Compiling the written programme using Risc-V compiler.
 ![11 compiling using RISCv compiler](https://github.com/user-attachments/assets/39d69293-072b-4060-ba6c-f1afd251bb10)
 
@@ -158,6 +107,41 @@ Cross-verification of the number of instructions.
 
 
 ![14 we have 17 instructions](https://github.com/user-attachments/assets/f826a5d3-5647-4ae0-8c2d-5dc2884818cd)
+### RISCV based LAB
+We have to do the same compilation of our code but this time using RISCV gcc compiler. Follow the given steps:  
+1. Open the terminal and run the given command:  
+
+	```
+	cat sum1ton.c
+	```
+### Cat Command:
+
+
+2. Using the **cat** command, the entire C code will be displayed on the terminal. Now run the following command to compile the code in riscv64 gcc compiler:  
+
+	```
+	riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+	```
+3. Open a new terminal and run the given command:    
+
+	```
+	riscv64-unknown-elf-objdump -d sum1ton.o
+	```
+### Objdump using -O1 format:
+
+
+4. Open the previous tab and run the following command to compile the code in riscv64 gcc compiler:  
+
+	```
+	riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+	```
+
+5. Open a new terminal and run the given command:    
+
+	```
+	riscv64-unknown-elf-objdump -d sum1ton.o
+	```
+### Objdump using -Ofast format:
 
 Changing the **option** fron **-O1 to -Ofast**
 ![15  Ofast](https://github.com/user-attachments/assets/7cf89e78-34eb-4d7d-8343-f732ad28e43f)
