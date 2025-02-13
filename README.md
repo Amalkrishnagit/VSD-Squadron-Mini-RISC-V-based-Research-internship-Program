@@ -1,14 +1,4 @@
-# RISC-V-INTERNSHIP
-## Overview
-The VSDSquadron Mini Internship 2024 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
-
- <p align="center">
-  <img width="400" height="250" ![1](https://github.com/user-attachments/assets/98159415-209f-4615-bbe7-35c575988313)>
->
-</p>
-
-The VSDsquadron Mini is a compact RISC-V development board designed for hobbyists, educators, and engineers. It features a powerful RISC-V microcontroller, offering a balance of performance and energy efficiency. Equipped with essential peripherals like GPIOs, UART, I2C, SPI, and ADC, it supports a wide range of applications, from IoT projects to embedded systems development. The board is USB-programmable, making it beginner-friendly, and is compatible with popular development tools and open-source resources. Its small form factor and versatility make it an ideal choice for learning RISC-V architecture and prototyping innovative designs.
-
+# VSD Squadron-Mini-(RISC-V)-REASEARCH INTERNSHIP
 ##  Basic Details
 
 **Name:** Amalkrishna
@@ -21,10 +11,21 @@ The VSDsquadron Mini is a compact RISC-V development board designed for hobbyist
 
 **LinkedIN Profile:** [Amalkrishna AK](https://www.linkedin.com/in/amalkrishna-ak)
 
+## Overview
+The VSDSquadron Mini Internship 2025 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
+
+ <p align="center">
+  <img width="400" height="250" ![1](https://github.com/user-attachments/assets/98159415-209f-4615-bbe7-35c575988313)>
+>
+</p>
+
+The VSDsquadron Mini is a compact RISC-V development board designed for hobbyists, educators, and engineers. It features a powerful RISC-V microcontroller, offering a balance of performance and energy efficiency. Equipped with essential peripherals like GPIOs, UART, I2C, SPI, and ADC, it supports a wide range of applications, from IoT projects to embedded systems development. The board is USB-programmable, making it beginner-friendly, and is compatible with popular development tools and open-source resources. Its small form factor and versatility make it an ideal choice for learning RISC-V architecture and prototyping innovative designs.The board is powered by CH32V003F4U6 chip with 32-bit RISC-V core based on RV32EC instruction set, optimized for high-performance computing with support for 2-level interrupt nesting and supports 24MHz system main frequency in the product function.Includes a built-in factory-trimmed 24MHz RC oscillator and a 128kHz RC oscillator, plus an external 24MHz oscillator option for varied clocking requirements.Boasts 3 groups of GPIO ports, totalling 15 I/O ports, enabling extensive peripheral connections and mapping to external interrupt capabilities.Offers multiple communication protocols including US- ART, I2C, and SPI for versatile connectivity options.Equipped with 2KB SRAM for volatile data storage, 16KB CodeFlash for program memory, and additional 1920B for bootloader functionalities.Features on-board CH32V305FBP6 single-wire programming protocol, enhancing development efficiency with seamless code deployment and debugging. NO NEED to purchase any additional adapter,
+
+
 -------------------------------------------------
 
 <details>
-<summary><b>Task 1:</b> The assignment is to watch lab videos that are based on C and RISCV and then use the gcc and riscv compilers to compile the C code</summary>
+<summary><b>Task 1:</b> The Objective of Task-1 is to watch lab videos that are based on C and RISCV and then use the gcc and riscv compilers to compile the C code</summary>
 
 ### C Language based LAB
 We have to follow the given steps to compile any **.c** file in our machine:  
@@ -170,24 +171,6 @@ The number of instructions reduced from 17 to 13 under the -main section.
 ### __________________________________________________
 ### ______________WEEK-2___________________________________
 
-# VSDSquadron Mini Internship 2024
-
-## Overview
-The VSDSquadron Mini Internship 2024 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
-
- <p align="center">
-  <img width="400" height="250" src="/Task 1/VSD_sq/vsdsquadron mini.jpg">
-</p>
-
-The VSDsquadron Mini is a compact RISC-V development board designed for hobbyists, educators, and engineers. It features a powerful RISC-V microcontroller, offering a balance of performance and energy efficiency. Equipped with essential peripherals like GPIOs, UART, I2C, SPI, and ADC, it supports a wide range of applications, from IoT projects to embedded systems development. The board is USB-programmable, making it beginner-friendly, and is compatible with popular development tools and open-source resources. Its small form factor and versatility make it an ideal choice for learning RISC-V architecture and prototyping innovative designs.
-
-##  Basic Details
-
-**Name:** Rohith DR  
-**College:** Global Academy of Technology  
-**Email ID:** rohithrohith838@gmail.com  
-**GitHub Profile:** [Rohith-DR](https://github.com/Rohith-DR?tab=repositories)  
-**LinkedIN Profile:** [Rohith-DR_ECE](https://www.linkedin.com/in/rohith-dr/)
 
 -------------------------------------------------
 
