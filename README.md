@@ -1,4 +1,93 @@
 # RISC-V-INTERNSHIP
+## Overview
+The VSDSquadron Mini Internship 2024 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
+
+ <p align="center">
+  <img width="400" height="250" src="/Task 1/VSD_sq/vsdsquadron mini.jpg">
+</p>
+
+The VSDsquadron Mini is a compact RISC-V development board designed for hobbyists, educators, and engineers. It features a powerful RISC-V microcontroller, offering a balance of performance and energy efficiency. Equipped with essential peripherals like GPIOs, UART, I2C, SPI, and ADC, it supports a wide range of applications, from IoT projects to embedded systems development. The board is USB-programmable, making it beginner-friendly, and is compatible with popular development tools and open-source resources. Its small form factor and versatility make it an ideal choice for learning RISC-V architecture and prototyping innovative designs.
+
+##  Basic Details
+
+**Name:** Amalkrishna
+**College:** Sri Sathya Sai Institute of higher Learning
+**Email ID:** akrishna9k@gmail.com  
+**GitHub Profile:** [Rohith-DR](https://github.com/Amalkrishnagit)
+**LinkedIN Profile:** [Rohith-DR_ECE](https://www.linkedin.com/in/amalkrishna-ak)
+
+-------------------------------------------------
+
+<details>
+<summary><b>Task 1:</b> The assignment is to watch lab videos that are based on C and RISCV and then use the gcc and riscv compilers to compile the C code</summary>
+
+### C Language based LAB
+We have to follow the given steps to compile any **.c** file in our machine:  
+1. Open the bash terminal and locate to the directory where you want to create your file. Then run the following command:
+
+	```
+	gedit sum.c
+	```  
+2. This will open the editor and allows you to write into the file that you have created. You have to write the C code of printing the sum of n numbers. Once you are done with your code, press ```Ctrl + S``` to save your file, and then press ```Ctrl + W``` to close the editor.   
+3. To the C code on your terminal, run the following command:
+
+	```
+	gcc sum.c
+	./a.out
+	```
+### C Code compiled on gcc Compiler:
+ <p align="center">
+  <img width="800" height="500" src="/Task 1/C Code compiled on gcc Compiler.png">
+</p>
+
+### Compiled C output:
+ <p align="center">
+  <img width="800" height="500" src="/Task 1/compiled C output.png">
+</p>
+
+### RISCV based LAB
+We have to do the same compilation of our code but this time using RISCV gcc compiler. Follow the given steps:  
+1. Open the terminal and run the given command:  
+
+	```
+	cat sum.c
+	```
+### Cat Command:
+ <p align="center">
+  <img width="800" height="500" src="/Task 1/cat Command.png">
+</p>
+
+2. Using the **cat** command, the entire C code will be displayed on the terminal. Now run the following command to compile the code in riscv64 gcc compiler:  
+
+	```
+	riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
+	```
+3. Open a new terminal and run the given command:    
+
+	```
+	riscv64-unknown-elf-objdump -d sum.o
+	```
+### Objdump using -O1 format:
+ <p align="center">
+  <img width="800" height="500" src="/Task 1/Objdump using -O1 format.png">
+</p>
+
+4. Open the previous tab and run the following command to compile the code in riscv64 gcc compiler:  
+
+	```
+	riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
+	```
+
+5. Open a new terminal and run the given command:    
+
+	```
+	riscv64-unknown-elf-objdump -d sum.o
+	```
+### Objdump using -Ofast format:
+ <p align="center">
+  <img width="800" height="500" src="/Task 1/Objdump using -Ofast format.png">
+</p>
+</details>
 
 ### ------------------ RISC V INTERNSHIP ------------------
 ### ______________WEEK-1___________________________________
