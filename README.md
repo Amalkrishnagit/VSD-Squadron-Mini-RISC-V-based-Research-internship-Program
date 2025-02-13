@@ -15,7 +15,7 @@
 The VSDSquadron Mini Internship 2025 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
 
  <p align="center">
-  <img width="400" height="250" src="/Overview/1.png">
+  <img width="400" height="250" src="/Overview/1.png"
 >
 </p>
 
