@@ -16,9 +16,9 @@ The VSDsquadron Mini is a compact RISC-V development board designed for hobbyist
 
 **Email ID:** akrishna9k@gmail.com  
 
-**GitHub Profile:** [Rohith-DR](https://github.com/Amalkrishnagit)
+**GitHub Profile:** [Amalkrishnagit](https://github.com/Amalkrishnagit)
 
-**LinkedIN Profile:** [Rohith-DR_ECE](https://www.linkedin.com/in/amalkrishna-ak)
+**LinkedIN Profile:** [Amalkrishna AK](https://www.linkedin.com/in/amalkrishna-ak)
 
 -------------------------------------------------
 
