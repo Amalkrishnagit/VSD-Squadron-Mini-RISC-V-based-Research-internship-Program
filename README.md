@@ -161,7 +161,7 @@ Check my [SSSIHL_Roadshow](https://github.com/Amalkrishnagit/SSSIHL_Roadshow)rep
 -------------------------------------------------
 
 <details>
-<summary><b>Task 2:</b> Using Spike Simulation and Interactive Debugging Mode to Debugg the C code during Spike</summary> 
+<summary><b>Task 2:</b> The Objective of Task-2:Using Spike Simulation and Interactive Debugging Mode to Debugg the C code during the Simulation</summary> 
 
 ### What is SPIKE in RISCV?
 > * A RISC-V ISA is a simulator, enabling the testing and analysis of RISC-V programs without the need for actual hardware.  
@@ -172,18 +172,18 @@ Check my [SSSIHL_Roadshow](https://github.com/Amalkrishnagit/SSSIHL_Roadshow)rep
 > * A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.  
 
 ### Testing the SPIKE Simulator  
-The target is to run the ```sum.c``` code using both ```gcc compiler``` and ```riscv compiler```, and both of the compiler must display the same output on the terminal. So to compile the code using **gcc compiler**, use the following command:  
+The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and ```riscv compiler```, and both of the compiler must display the same output on the terminal. So to compile the code using **gcc compiler**, use the following command:  
 ```
-gcc sum.c  
+gcc sum1ton.c  
 ./a.out
 ```
 And to compile the code using **riscv compiler**, use the following command:  
 ```
-spike pk sum.o
+spike pk sum1ton.o
 ```  
 #### Spike Simulation:
  <p align="center">
-  <img width="800" height="500" src="/Task 2/Spike Simulation.png">
+  <img width="800" height="500" src="/Task-2/1.PNG">
 </p>
 
 #### Following are the snapshots of RISCV Objdump with **-O1** and **-Ofast** options  
@@ -191,37 +191,46 @@ spike pk sum.o
 #### Objdump in -O1:
 
 ```
-riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```
 
  <p align="center">
-  <img width="800" height="500" src="/Task 2/Objdump in -O1.png">
+  <img width="800" height="500" src="/Task-2/2-open objdump.PNG">
 </p>
   
 #### Objdump in -Ofast:
 
 ```
-riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```
  
- <p align="center">
-  <img width="800" height="500" src="/Task 2/Objdump in -Ofast.png">
-</p>
 
-#### Debugging the Assembly Language Program of  ```sum.c```  
+#### Debugging the Assembly Language Program of  ```sum1ton.c```  
 * Open the **Objdump** of code by using the following command  
 ```
-riscv64-unknown-elf-objdump -d sum.o | less  
+riscv64-unknown-elf-objdump -d sum1ton.o | less  
 ```
 * Open the debugger in another terminal by using the following command  
 ```
-spike -d pk sum.o
+spike -d pk sum1ton.o
 ```
 * The debugger will be opened in the terminal. Now, debugging operations can be performed as shown in the following snapshot.
 
 #### Debugging:
  <p align="center">
-  <img width="800" height="500" src="/Task 2/Debugging.png">
+  <img width="800" height="500" src="Task-2/3.PNG">
+</p>
+ <p align="center">
+  <img width="800" height="500" src="/Task-2/4.PNG">
+</p>
+ <p align="center">
+  <img width="800" height="500" src="/Task-2/4.1.PNG">
+</p>
+<p align="center">
+  <img width="800" height="500" src="/Task-2/5.PNG">
+</p>
+<p align="center">
+  <img width="800" height="500" src="/Task-2/5.1.PNG">
 </p>
 </details>
 
