@@ -15,7 +15,7 @@
 The VSDSquadron Mini Internship 2025 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
 
  <p align="center">
-  <img width="400" height="250" src="/Overview/1.png">
+	 <img width="400" height="250" src="/Overview/1.png">
 	 
 </p>
 
@@ -36,7 +36,7 @@ We have to follow the given steps to compile any **.c** file in our machine:
 	```  
 2. This will open the editor and allows you to write into the file that you have created. You have to write the C code of printing the sum of n numbers. Once you are done with your code, save your file, and then close the editor.
  Installing Leafpad editor
- ![1 Installing Leafpad editor](https://github.com/user-attachments/assets/cf0d0b1f-2648-497f-8e25-4988b0ed6498)
+![1 Installing Leafpad editor](https://github.com/user-attachments/assets/cf0d0b1f-2648-497f-8e25-4988b0ed6498)
 
 ![2 ILE 2](https://github.com/user-attachments/assets/c3880c81-035f-4148-8f83-11773a7a1025)
 
@@ -73,7 +73,6 @@ Updating the written programme to start a new command in the next line.
 
 
 ![6 Updating the programme](https://github.com/user-attachments/assets/40454273-9f46-4c57-b2cc-5c179b2fe81f)
-
 
 We can see that the next command starts in a new line.
 ![7 The next command starts in a new line](https://github.com/user-attachments/assets/56b8c3eb-19ba-43c0-adbd-3e20518fb912)
@@ -151,7 +150,9 @@ The number of instructions reduced from 17 to 13 under the -main section.
 ![15 2](https://github.com/user-attachments/assets/193fb232-633d-4539-a908-fc939eb327b7)
 
 </details>
+
 -------------------------------------------------
+
 <details>
 <summary><b>Task 2:</b> Using Spike Simulation and Interactive Debugging Mode to Debugg the C code during Spike</summary> 
 
