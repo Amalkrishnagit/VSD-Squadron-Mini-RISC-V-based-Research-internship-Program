@@ -3,7 +3,8 @@
 The VSDSquadron Mini Internship 2024 is an intensive, short-term internship program designed to provide participants with hands-on experience in the fields of VLSI design, semiconductor technology, and related domains. Tailored for engineering students, recent graduates, and aspiring technologists, this program bridges the gap between academic knowledge and industry-ready skills.
 
  <p align="center">
-  <img width="400" height="250" src="/Task 1/VSD_sq/vsdsquadron mini.jpg">
+  <img width="400" height="250" ![1](https://github.com/user-attachments/assets/98159415-209f-4615-bbe7-35c575988313)
+>
 </p>
 
 The VSDsquadron Mini is a compact RISC-V development board designed for hobbyists, educators, and engineers. It features a powerful RISC-V microcontroller, offering a balance of performance and energy efficiency. Equipped with essential peripherals like GPIOs, UART, I2C, SPI, and ADC, it supports a wide range of applications, from IoT projects to embedded systems development. The board is USB-programmable, making it beginner-friendly, and is compatible with popular development tools and open-source resources. Its small form factor and versatility make it an ideal choice for learning RISC-V architecture and prototyping innovative designs.
