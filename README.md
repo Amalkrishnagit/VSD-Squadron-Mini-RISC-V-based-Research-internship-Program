@@ -342,42 +342,42 @@ J-type instructions are used for jump operations. These instructions are often u
 	
 #### Compile the C program into a RISC-V ELF binary
 ```
-riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -o sum sum.c
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -o sum1ton sum1ton.c
 ```
 
 #### Generate a disassembly of the binary
 ```
-riscv64-unknown-elf-objdump -d sum > sum.objdump
+riscv64-unknown-elf-objdump -d sum1ton > sum1ton.objdump
 ```
 
 #### Display the main function's disassembly, with 30 lines of context
 ```
-riscv64-unknown-elf-objdump -d sum | grep -A 30 "<main>:"
+riscv64-unknown-elf-objdump -d sum1ton | grep -A 30 "<main>:"
 ```
 
 #### Filter for arithmetic and logical instructions: add, sub, and, or
 ```
-riscv64-unknown-elf-objdump -d sum | grep -E "add|sub|and|or"
+riscv64-unknown-elf-objdump -d sum1ton | grep -E "add|sub|and|or"
 ```
 
 #### Filter for immediate arithmetic, load, and jump instructions: addi, lw, jalr
 ```
-riscv64-unknown-elf-objdump -d sum | grep -E "addi|lw|jalr"
+riscv64-unknown-elf-objdump -d sum1ton | grep -E "addi|lw|jalr"
 ```
 
 #### Filter for store and branch instructions: sw, beq, bne, blt, bge
 ```
-riscv64-unknown-elf-objdump -d sum | grep -E "sw|beq|bne|blt|bge"
+riscv64-unknown-elf-objdump -d sum1ton | grep -E "sw|beq|bne|blt|bge"
 ```
 
 #### Filter for control flow and address instructions: lui, auipc, jal
 ```
-riscv64-unknown-elf-objdump -d sum | grep -E "lui|auipc|jal"
+riscv64-unknown-elf-objdump -d sum1ton | grep -E "lui|auipc|jal"
 ```
 
 #### Count occurrences of each unique instruction
 ```
-riscv64-unknown-elf-objdump -d sum | grep -o "\s\w\+\s" | sort | uniq -c
+riscv64-unknown-elf-objdump -d sum1ton | grep -o "\s\w\+\s" | sort | uniq -c
 ```
 </details>
 
