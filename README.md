@@ -237,11 +237,7 @@ spike -d pk sum1ton.o
 ----------------------------------------
 
 <details>
-<summary><b>Task 3:</b>  the objectives of Task-3 are 1.)  Listing various RISC-V instruction type (R, I, S, B, U, J) after going through RISC-V software documentation
-
-2) Identifying 15 unique RISC-V instructions from riscv-objdmp of my application code 
-
-3) Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions</summary>
+<summary><b>Task 3:</b>  the objectives of Task-3 are 1.)  Listing various RISC-V instruction type (R, I, S, B, U, J) after going through RISC-V software documentation 2.) Identifying 15 unique RISC-V instructions from riscv-objdmp of my application code 3.) Identifying exact 32-bit instruction code in the instruction type format for 15 unique instructions</summary>
 
 ## WHAT IS RISC-V?
 - RISC-V is an open-source instruction set architecture (ISA) that allows developers to create processors tailored for specific applications.
