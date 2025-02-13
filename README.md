@@ -93,10 +93,8 @@ We have to do the same compilation of our code but this time using RISCV gcc com
  <p align="center">
   <img width="800" height="500" src="/Task 1/Objdump using -Ofast format.png">
 </p>
-</details>
 
-### ------------------ RISC V INTERNSHIP ------------------
-### ______________WEEK-1___________________________________
+
 
 Installing Leafpad editor
 
@@ -168,10 +166,7 @@ The number of instructions reduced from 17 to 13 under the -main section.
 
 ![15 2](https://github.com/user-attachments/assets/193fb232-633d-4539-a908-fc939eb327b7)
 
-### __________________________________________________
-### ______________WEEK-2___________________________________
-
-
+</details>
 -------------------------------------------------
 
 <details>
