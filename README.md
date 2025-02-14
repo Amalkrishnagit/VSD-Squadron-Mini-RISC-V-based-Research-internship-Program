@@ -265,7 +265,7 @@ There are six primary instruction formats in RISC-V:
 In RV32, each instruction is 32 bits in size. R-type instructions perform operations on registers (not memory) and are used for various arithmetic and logical operations. The 32-bit instruction is divided into six fields:
 
  <p align="center">
-  <img width="800" height="500" src="/Task-3/R.PNG">
+  <img width="800" height="100" src="/Task-3/R.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -278,7 +278,7 @@ In RV32, each instruction is 32 bits in size. R-type instructions perform operat
 I-type instructions involve operations that use both registers and an immediate value (not memory). These instructions are used for immediate and load operations. The instruction format is as follows:
 
  <p align="center">
-  <img width="800" height="500" src="/Task-3/I.PNG">
+  <img width="800" height="100" src="/Task-3/I.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -291,7 +291,7 @@ I-type instructions involve operations that use both registers and an immediate 
 S-type instructions are used for store operations where data is stored from a register to memory. The 32-bit instruction is divided as follows:
 
  <p align="center">
-  <img width="800" height="500" src="/Task-3/S.PNG">
+  <img width="800" height="100" src="/Task-3/S.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -304,7 +304,7 @@ S-type instructions are used for store operations where data is stored from a re
 B-type instructions are used for conditional branching based on comparisons. The 32-bit instruction format is as follows:
 
  <p align="center">
-  <img width="800" height="500" src="/Task-3/B.PNG">
+  <img width="800" height="100" src="/Task-3/B.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -316,7 +316,7 @@ B-type instructions are used for conditional branching based on comparisons. The
 U-type instructions are used to transfer an immediate value into the destination register. The format is simple and involves only two instructions: `LUI` and `AUIPC`.
 
  <p align="center">
-  <img width="800" height="500" src="/Task-3/U.PNG">
+  <img width="800" height="100" src="/Task-3/U.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -329,7 +329,7 @@ For example, the instruction `lui x15, 0x13579` would load the value `0x13579000
 J-type instructions are used for jump operations. These instructions are often used for loops and branching to a specified memory location. The format is as follows:
 
  <p align="center">
-  <img width="800" height="500" src="/Task-3/J.PNG">
+  <img width="800" height="100" src="/Task-3/J.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
