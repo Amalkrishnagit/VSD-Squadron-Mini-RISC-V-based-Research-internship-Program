@@ -850,13 +850,13 @@ https://github.com/vinayrayapati/rv32i/
 	```
 
  <p align="center">
-  <img width="500" src="/Task 4/GTKWave Window.png">
+  <img width="500" src="/Task-4/1.PNG">
 </p>
 
 7. The following window will appear when GTKWave opens 
 
  <p align="center">
-  <img width="500" src="/Task 4/GTKWave Window.png">
+  <img width="500" src="/Task-4/2.GTK.PNG">
 </p>
  
 Every instruction in the provided verilog file is hard-coded, as seen in the picture below. Hard-coded indicates that each instruction has been hard-coded according to the designer's own pattern rather than adhering to the RISCV specifications bit pattern. As a result, the 32-bit instruction we produced in Task 3 will not correspond to the specified instruction.  
