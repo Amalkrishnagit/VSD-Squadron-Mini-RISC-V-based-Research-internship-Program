@@ -827,7 +827,7 @@ int main() {
 ----------------------------------------------
 
 <details>
-<summary><b>Task 4:</b> Use RISCV Core: Verilog Netlist and Testbench to conduct a functional simulation experiment and view the waveforms</summary>  
+<summary><b>Task 4:</b> The Objective of TAsk-4 is to use RISCV Core: Verilog Netlist and Testbench to conduct a functional simulation experiment and view the waveforms</summary>  
 <br>
 
 >***NOTE:** Since this research internship does not include building the RISCV architecture or writing its testbench, we will utilize the pre-existing Verilog code and testbench. The GitHub repository used as a reference is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)*    
