@@ -516,7 +516,7 @@ This document provides a detailed explanation of the given RISC-V assembly instr
   - **rs2**: a2 = 01100  
   - **imm**: 0 000011 1100 0  
   - **func3**: 000  
-- **32-bit Instruction**: `0_000011_01100_01000_000_1100_0_1100011`
+- **32-bit Instruction**:  `0_000011_01100_01000_000_1100_0_1100011`
 
 ---
 
@@ -529,7 +529,7 @@ This document provides a detailed explanation of the given RISC-V assembly instr
   - **rs2**: a5 = 01111  
   - **imm**: 1_111111_0100_1  
   - **func3**: 001  
-- **32-bit Instruction**: 1_111111_01111_01011_001_0100_1_1100011`
+- **32-bit Instruction**: `1_111111_01111_01011_001_0100_1_1100011`
 
 ---
 
@@ -554,7 +554,7 @@ This document provides a detailed explanation of the given RISC-V assembly instr
   - **opcode**: 0110111  
   - **rd**: a5 = 01111
   - **imm**: 00000000000010000000  
-- **32-bit Instruction**: 00000000000010000000_01111_0110111`
+- **32-bit Instruction**:  `00000000000010000000_01111_0110111`
 
 ---
 
