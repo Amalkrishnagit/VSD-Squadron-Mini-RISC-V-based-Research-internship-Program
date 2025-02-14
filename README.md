@@ -258,14 +258,14 @@ There are six primary instruction formats in RISC-V:
 #### RISCV Instruction Types
 
  <p align="center">
-  <img src="/Task-3/Instuction types.PNG">
+  <img width="800" height="500" src="/Task-3/Instuction types.PNG">
 </p>
 
 #### 1. R-type Instruction
 In RV32, each instruction is 32 bits in size. R-type instructions perform operations on registers (not memory) and are used for various arithmetic and logical operations. The 32-bit instruction is divided into six fields:
 
  <p align="center">
-  <img src="/Task-3/R.PNG">
+  <img width="800" height="500" src="/Task-3/R.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -278,7 +278,7 @@ In RV32, each instruction is 32 bits in size. R-type instructions perform operat
 I-type instructions involve operations that use both registers and an immediate value (not memory). These instructions are used for immediate and load operations. The instruction format is as follows:
 
  <p align="center">
-  <img src="/Task-3/I.PNG">
+  <img width="800" height="500" src="/Task-3/I.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -291,7 +291,7 @@ I-type instructions involve operations that use both registers and an immediate 
 S-type instructions are used for store operations where data is stored from a register to memory. The 32-bit instruction is divided as follows:
 
  <p align="center">
-  <img src="/Task-3/S.PNG">
+  <img width="800" height="500" src="/Task-3/S.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -304,7 +304,7 @@ S-type instructions are used for store operations where data is stored from a re
 B-type instructions are used for conditional branching based on comparisons. The 32-bit instruction format is as follows:
 
  <p align="center">
-  <img src="/Task-3/B.PNG">
+  <img width="800" height="500" src="/Task-3/B.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -316,7 +316,7 @@ B-type instructions are used for conditional branching based on comparisons. The
 U-type instructions are used to transfer an immediate value into the destination register. The format is simple and involves only two instructions: `LUI` and `AUIPC`.
 
  <p align="center">
-  <img src="/Task-3/U.PNG">
+  <img width="800" height="500" src="/Task-3/U.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -329,7 +329,7 @@ For example, the instruction `lui x15, 0x13579` would load the value `0x13579000
 J-type instructions are used for jump operations. These instructions are often used for loops and branching to a specified memory location. The format is as follows:
 
  <p align="center">
-  <img src="/Task-3/J.PNG">
+  <img width="800" height="500" src="/Task-3/J.PNG">
 </p>
 
 - **opcode** (7 bits): Specifies the type of instruction.
@@ -355,7 +355,7 @@ riscv64-unknown-elf-objdump -d sum1ton > sum1ton.objdump
 riscv64-unknown-elf-objdump -d sum1ton | grep -A 30 "<main>:"
 ```
 <p align="center">
-  <img src="/Task-3/1.PNG">
+  <img width="800" height="500" src="/Task-3/1.PNG">
 </p>
 
 #### Filter for arithmetic and logical instructions: add, sub, and, or
@@ -363,7 +363,7 @@ riscv64-unknown-elf-objdump -d sum1ton | grep -A 30 "<main>:"
 riscv64-unknown-elf-objdump -d sum1ton | grep -E "add|sub|and|or"
 ```
 <p align="center">
-  <img src="/Task-3/2.PNG">
+  <img width="800" height="500" src="/Task-3/2.PNG">
 </p>
 
 #### Filter for immediate arithmetic, load, and jump instructions: addi, lw, jalr
@@ -371,7 +371,7 @@ riscv64-unknown-elf-objdump -d sum1ton | grep -E "add|sub|and|or"
 riscv64-unknown-elf-objdump -d sum1ton | grep -E "addi|lw|jalr"
 ```
 <p align="center">
-  <img src="/Task-3/3.PNG">
+  <img width="800" height="500" src="/Task-3/3.PNG">
 </p>
 
 #### Filter for store and branch instructions: sw, beq, bne, blt, bge
@@ -632,7 +632,7 @@ int main() {
 ```
 
  <p align="center">
-  <img src="/Task-3/5.PNG">
+  <img width="800" height="500" src="/Task-3/5.PNG">
 </p>
 </details>
 
@@ -850,19 +850,19 @@ https://github.com/vinayrayapati/rv32i/
 	```
 
  <p align="center">
-  <img width="500" src="/Task-4/1.PNG">
+  <img width="800" height="500" src="/Task-4/1.PNG">
 </p>
 
 7. The following window will appear when GTKWave opens 
 
  <p align="center">
-  <img width="500" src="/Task-4/2.GTK.PNG">
+  <img width="800" height="500" src="/Task-4/2.GTK.PNG">
 </p>
  
 Every instruction in the provided verilog file is hard-coded, as seen in the picture below. Hard-coded indicates that each instruction has been hard-coded according to the designer's own pattern rather than adhering to the RISCV specifications bit pattern. As a result, the 32-bit instruction we produced in Task 3 will not correspond to the specified instruction.  
   
  <p align="center">
-  <img width="500" src="/Task-4/3.Hard coded Instructions.PNG">
+  <img width="800" height="500" src="/Task-4/3.Hard coded Instructions.PNG">
 </p>
   
 #### Following are the differences between standard RISCV ISA and the Instruction Set given in the reference repository:  
