@@ -630,6 +630,10 @@ int main() {
 }
 
 ```
+
+ <p align="center">
+  <img src="/Task-3/5.PNG">
+</p>
 </details>
 
 
