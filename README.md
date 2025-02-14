@@ -357,6 +357,7 @@ riscv64-unknown-elf-objdump -d sum1ton | grep -A 30 "<main>:"
 <p align="center">
   <img src="/Task-3/1.PNG">
 </p>
+
 #### Filter for arithmetic and logical instructions: add, sub, and, or
 ```
 riscv64-unknown-elf-objdump -d sum1ton | grep -E "add|sub|and|or"
@@ -364,6 +365,7 @@ riscv64-unknown-elf-objdump -d sum1ton | grep -E "add|sub|and|or"
 <p align="center">
   <img src="/Task-3/2.PNG">
 </p>
+
 #### Filter for immediate arithmetic, load, and jump instructions: addi, lw, jalr
 ```
 riscv64-unknown-elf-objdump -d sum1ton | grep -E "addi|lw|jalr"
@@ -371,6 +373,7 @@ riscv64-unknown-elf-objdump -d sum1ton | grep -E "addi|lw|jalr"
 <p align="center">
   <img src="/Task-3/3.PNG">
 </p>
+
 #### Filter for store and branch instructions: sw, beq, bne, blt, bge
 ```
 riscv64-unknown-elf-objdump -d sum1ton | grep -E "sw|beq|bne|blt|bge"
