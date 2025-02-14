@@ -634,7 +634,7 @@ int main() {
 
 
 <details>
-<summary>Now, let's analyse each instruction one by one present in Reram model application</summary>
+<summary>Now, let's analyse each instruction one by one present in model application</summary>
 
 ### 1) `addiw a5, a5, 1`
 * This is an I-type instruction used for adding an immediate value to a register.
