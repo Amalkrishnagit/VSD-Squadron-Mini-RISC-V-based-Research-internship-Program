@@ -594,86 +594,41 @@ This document provides a detailed explanation of the given RISC-V assembly instr
 
 # Example Application with its Instructions
 <details>
-<summary>Given below is the C code for a application of 16-Bit ReRAM Memory Model</summary>
+<summary>Given below is a simple C program that performs basic mathematical operations like addition, subtraction, multiplication, and division</summary>
 	
 ```c
-//16-Bit ReRAM Memory Model
+//C program
 
 #include <stdio.h>
-#include <stdint.h>
 
-// Define states for ReRAM
-#define HRS 0 // High Resistance State (binary 0)
-#define LRS 1 // Low Resistance State (binary 1)
-
-// Structure to represent a ReRAM cell
-typedef struct {
-    int state; // Current state of the cell (HRS or LRS)
-} ReRAM_Cell;
-
-// Structure to represent a 16-bit RAM
-typedef struct {
-    ReRAM_Cell cells[16]; // Array of 16 ReRAM cells
-} ReRAM_16Bit_RAM;
-
-// Function to initialize the 16-bit RAM
-void initialize_ram(ReRAM_16Bit_RAM *ram) {
-    for (int i = 0; i < 16; i++) {
-        ram->cells[i].state = HRS; // Set all cells to HRS (binary 0)
-    }
-}
-
-// Function to write a 16-bit value to the RAM
-void write_to_ram(ReRAM_16Bit_RAM *ram, uint16_t data) {
-    for (int i = 0; i < 16; i++) {
-        // Write each bit to the corresponding cell
-        if (data & (1 << i)) {
-            ram->cells[i].state = LRS; // Set to LRS (binary 1)
-        } else {
-            ram->cells[i].state = HRS; // Set to HRS (binary 0)
-        }
-    }
-}
-
-// Function to read a 16-bit value from the RAM
-uint16_t read_from_ram(ReRAM_16Bit_RAM *ram) {
-    uint16_t data = 0;
-    for (int i = 0; i < 16; i++) {
-        if (ram->cells[i].state == LRS) {
-            data |= (1 << i); // Set the corresponding bit in the output
-        }
-    }
-    return data;
-}
-
-// Main function to demonstrate the 16-bit RAM simulation
 int main() {
-    ReRAM_16Bit_RAM ram;
+    double num1, num2;
+    
+    // Taking input from the user
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
 
-    // Initialize the RAM
-    initialize_ram(&ram);
-    printf("Initialized RAM. All cells are in HRS (0).\n");
+    // Performing mathematical operations
+    double sum = num1 + num2;
+    double difference = num1 - num2;
+    double product = num1 * num2;
+    double quotient = (num2 != 0) ? (num1 / num2) : 0; // Handling division by zero
 
-    // Write a 16-bit value to the RAM
-    uint16_t value_to_write = 0b1010101010101010; // Example value: 16-bit alternating pattern
-    printf("Writing value: 0x%04X\n", value_to_write);
-    write_to_ram(&ram, value_to_write);
-
-    // Read the value from the RAM
-    uint16_t value_read = read_from_ram(&ram);
-    printf("Value read from RAM: 0x%04X\n", value_read);
-
-    // Write another 16-bit value to the RAM
-    value_to_write = 0xFFFF; // All bits set to 1
-    printf("Writing value: 0x%04X\n", value_to_write);
-    write_to_ram(&ram, value_to_write);
-
-    // Read again
-    value_read = read_from_ram(&ram);
-    printf("Value read from RAM: 0x%04X\n", value_read);
+    // Displaying results
+    printf("\nResults:\n");
+    printf("Sum: %.2lf\n", sum);
+    printf("Difference: %.2lf\n", difference);
+    printf("Product: %.2lf\n", product);
+    
+    if (num2 != 0) {
+        printf("Quotient: %.2lf\n", quotient);
+    } else {
+        printf("Division by zero is not allowed.\n");
+    }
 
     return 0;
 }
+
 ```
 </details>
 
