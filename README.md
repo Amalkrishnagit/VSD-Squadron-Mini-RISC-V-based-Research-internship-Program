@@ -849,13 +849,17 @@ https://github.com/vinayrayapati/rv32i/
 	$ gtkwave iiitb_rv32i.vcd
 	```
 
-7. The GTKWave will be opened and following window will be appeared  
+ <p align="center">
+  <img width="500" src="/Task 4/GTKWave Window.png">
+</p>
+
+7. The following window will appear when GTKWave opens 
 
  <p align="center">
   <img width="500" src="/Task 4/GTKWave Window.png">
 </p>
  
-#### Every instruction in the provided verilog file is hard-coded, as seen in the picture below. Hard-coded indicates that each instruction has been hard-coded according to the designer's own pattern rather than adhering to the RISCV specifications bit pattern. As a result, the 32-bit instruction we produced in Task 3 will not correspond to the specified instruction.  
+Every instruction in the provided verilog file is hard-coded, as seen in the picture below. Hard-coded indicates that each instruction has been hard-coded according to the designer's own pattern rather than adhering to the RISCV specifications bit pattern. As a result, the 32-bit instruction we produced in Task 3 will not correspond to the specified instruction.  
   
  <p align="center">
   <img width="500" src="/Task 4/Instructions.png">
