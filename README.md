@@ -866,6 +866,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 </p>
   
 #### Following are the differences between standard RISCV ISA and the Instruction Set given in the reference repository:  
+ <p align="center">
   
 |  **Operation**  |  **Standard RISCV ISA**  |  **Hardcoded ISA**  |  
 |  :----:  |  :----:  |  :----:  |  
@@ -881,7 +882,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 |  LW R13, R1, 2  |  32'h0020a683  |  32'h00208681  |  
 |  SRL R16, R14, R2  |  32'h0030a123  |  32'h00271803  |
 |  SLL R15, R1, R2  |  32'h002097b3  |  32'h00208783  |   
-  
+ </p> 
 
 #### *Analysing the Output Waveform of various instructions that we have covered in TASK-2*  
 
