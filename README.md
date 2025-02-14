@@ -862,7 +862,7 @@ https://github.com/vinayrayapati/rv32i/
 Every instruction in the provided verilog file is hard-coded, as seen in the picture below. Hard-coded indicates that each instruction has been hard-coded according to the designer's own pattern rather than adhering to the RISCV specifications bit pattern. As a result, the 32-bit instruction we produced in Task 3 will not correspond to the specified instruction.  
   
  <p align="center">
-  <img width="500" src="/Task 4/Instructions.png">
+  <img width="500" src="/Task-4/3.Hard coded Instructions.PNG">
 </p>
   
 #### Following are the differences between standard RISCV ISA and the Instruction Set given in the reference repository:  
