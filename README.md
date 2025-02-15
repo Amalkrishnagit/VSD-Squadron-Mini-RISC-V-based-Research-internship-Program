@@ -889,7 +889,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 1: ADD R6, R2, R1```**
 
 <p align="center">
-  <img width="500" src="/Task 4/ADD.png">
+  <img width="500" src="/Task-4/ADD.PNG">
 </p>
 
 ---
@@ -897,7 +897,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 2: SUB R7, R1, R2```**
 
 <p align="center">
-  <img width="500" src="/Task 4/SUB.png">
+  <img width="500" src="/Task-4/SUB.PNG">
 </p>
 
 ---
@@ -905,7 +905,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 3: AND R8, R1, R3```**
 
 <p align="center">
-  <img width="500" src="/Task 4/AND.png">
+  <img width="500" src="/Task-4/AND.PNG">
 </p>
 
 ---
@@ -913,7 +913,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 4: OR R9, R2, R5```**
 
 <p align="center">
-  <img width="500" src="/Task 4/OR.png">
+  <img width="500" src="/Task-4/OR.PNG">
 </p>
 
 ---
@@ -921,7 +921,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 5: XOR R10, R1, R4```**
 
 <p align="center">
-  <img width="500" src="/Task 4/XOR.png">
+  <img width="500" src="/Task-4/XOR.PNG">
 </p>
 
 ---
@@ -929,7 +929,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 6: SLT R11, R2, R4```**
 
 <p align="center">
-  <img width="500" src="/Task 4/SLT.png">
+  <img width="500" src="/Task-4/SLT.PNG">
 </p>
 
 ---
@@ -937,7 +937,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 7: ADDI R12, R4, 5```**
 
 <p align="center">
-  <img width="500" src="/Task 4/ADDI.png">
+  <img width="500" src="/Task-4/ADDI.PNG">
 </p>
 
 ---
@@ -945,7 +945,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 8: BEQ R0, R0, 15```**
 
 <p align="center">
-  <img width="500" src="/Task 4/BEQ.png">
+  <img width="500" src="/Task-4/BEQ.PNG">
 </p>
 
 ---
@@ -953,7 +953,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 9: SW R3, R1, 2```**
 
 <p align="center">
-  <img width="500" src="/Task 4/SW.png">
+  <img width="500" src="/Task-4/SW.PNG">
 </p>
 
 ---
@@ -961,7 +961,7 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 **```Instruction 10: LW R13, R1, 2```**
 
 <p align="center">
-  <img width="500" src="/Task 4/LW.png">
+  <img width="500" src="/Task-4/LW.PNG">
 </p>
 
 </details>  
