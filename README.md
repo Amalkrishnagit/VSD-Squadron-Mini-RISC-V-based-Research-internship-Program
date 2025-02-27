@@ -33,7 +33,7 @@ The VSDsquadron Mini is a compact RISC-V development board designed for hobbyist
 
 ### C Language based LAB
 We have to follow the given steps to compile any **.c** file in our machine:  
-1. Open the bash terminal and locate to the directory where you want to create your file. Then run the following command:
+1. Open the bash terminal and locate the directory where you want to create your file. Then run the following command:
 
 	```
 	gedit sum.c or leafpad sum1ton.c
@@ -974,10 +974,17 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 # Motion Detector System
 
 ## Overview
-
-
+This C program is designed for a CH32V003 RISC-V Processor to control an LED and a buzzer based on the output from a Passive Infrared (PIR) motion sensor.
 ## Components Required
-
+ * **VSD Squadron Mini (Microcontroller)**
+ * **PIR Motion Sensor (HC-SR501**)
+ * **Buzzer (Active or passive)**
+ * **LED (Indicator for motion detection)**
+ * **Resistors:
+   330Ω (For LED protection)**,10kΩ (Pull-down resistor for PIR sensor)
+ * Capacitor: 100µF/16V electrolytic capacitor (Noise filtering for PIR sensor)
+ * **Breadboard & Jumper Wires**
+ * **5V Power Supply or USB Cable (for microcontroller)**
 
 ## System Specifications
 ### CH32V003 RISC-V Processor
@@ -985,8 +992,21 @@ Every instruction in the provided verilog file is hard-coded, as seen in the pic
 - Communication Protocols: I2C, SPI, UART
 - GPIO Pins: Configurable for interfacing with external devices
 
-### MPU6050 Accelerometer Sensor
-
+### HC-SR501 PIR Sensor
+- Detection Range: 3m - 7m (adjustable)
+- Detection Angle: 120° (wide coverage)
+- Response Time: 0.3s - 3s (adjustable)
+- Retrigger Time: 0.5s - 200s (adjustable)
+- Operating Voltage: 4.5V - 20V DC (works with 5V & 3.3V MCUs)
+- Output Signal: Digital (HIGH = Motion, LOW = No Motion)
+- Output Voltage: 3.3V - 5V (safe for most MCUs like CH32V00x, STM32, ESP32, Arduino)
+- Low Power Consumption: ~50µA in standby mode
+- PIR Pin	Microcontroller Connection
+- VCC	3.3V or 5V (MCU Power)
+- OUT	Digital Input Pin (Interrupt/GPIO)
+- GND	Ground (Common with MCU)
+- Use a pull-down resistor (10kΩ) on the OUT pin to avoid false triggers.
+- Use a decoupling capacitor (0.1µF) across VCC-GND for noise filtering.
 
 ## Circuit Connections
 <p align="center">
